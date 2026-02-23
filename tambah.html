@@ -1,0 +1,47 @@
+ <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tambah Musik</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Form Tambah inventory</h1>
+
+  <form id="formTambah">
+
+    <label>no</label>
+    <input type="text" id="no" required>
+
+    <label>Nama barang</label>
+    <input type="text" id="nama barang" required>
+
+    <label>harga</label>
+    <input type="text" id="harga" required>
+    
+    <label>stok</label>
+     <input type="text" id="stok" required
+     
+    <button type="submit">Simpan</button>
+
+  </form>
+
+  <a href="daftar.html">Daftar inventory</a>
+</div>
+
+<script type="module">
+  import { tambahinventory} from './main.js';
+
+  const formTambah = document.getElementById('formTambah');
+
+  formTambah.addEventListener('submit', function(e) {
+    e.preventDefault();
+    tambahmusik();
+  });
+</script>
+
+</body>
+</html>

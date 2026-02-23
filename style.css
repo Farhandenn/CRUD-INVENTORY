@@ -1,3 +1,90 @@
+  /* Background utama */
 body {
-    font-size: 15pt;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #0b1a2f, #102a4c);
+  margin: 0;
+  padding: 30px;
+  color: #e6f1ff;
+}
+
+/* Card utama */
+.container {
+  max-width: 750px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+  color: #66d9ff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Link tambah */
+a {
+  color: #7ce3ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background: rgba(102,217,255,0.15);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Hover baris */
+tr:hover {
+  background: rgba(255,255,255,0.05);
+  transition: 0.2s;
+}
+
+/* Tombol */
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* Tombol edit */
+.btn-edit {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+  background: linear-gradient(45deg, #ff6b6b, #ff3b3b);
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
